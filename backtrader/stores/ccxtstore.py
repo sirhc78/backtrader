@@ -78,6 +78,7 @@ class CCXTStore(object):
 
     @classmethod
     def get_store(cls, exchange, config, retries):
+ 
         store = cls.stores.get(exchange)
         if store:
             store_conf = cls.configs[exchange]
